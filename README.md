@@ -1,13 +1,13 @@
 ### 使用
-    . 在Application中初始化
-        '''java
+    - 在Application中初始化
+        ```java
             val loaderConfig = ImageLoaderConfig.Builder(LoaderEnum.GLIDE, GlideImageLocader())
             .build()
 
             ImageLoaderManager.getInstance().init(this, loaderConfig)
-        '''
-    . 加载图片
-        '''java
+        ```
+    - 加载图片
+        ```java
             ImageLoaderManager
             .getInstance()
             .showImage(
@@ -28,4 +28,5 @@
                     })
                     .build()
                 )
-        '''
+        ```
+       
